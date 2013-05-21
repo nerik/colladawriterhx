@@ -1,0 +1,7 @@
+
+<project name="colladawriterhx" url="https://github.com/nerik/colladawriterhx" license="MIT">
+    <user name="nerik"/>
+    <tag v="cross"/>
+    <description>Colladawriterhx is a Collada file writer. ATM Collada features support is very partial and the lib is not stable at all.</description>
+    <version name="0.1.0">Initial commit</version>
+</project>
