@@ -1,7 +1,7 @@
 
 package me.nerik.collada;
 
-import Collada.Point3D;
+
 
 class Geometry 
 {
