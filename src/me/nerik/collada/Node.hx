@@ -13,6 +13,7 @@ class Node
 
 	public function new()
 	{
+		nodes = new Array();
 		type = NodeType.NODE;
 	}
 
@@ -33,6 +34,12 @@ class Node
 		{
 			var translateXml = translate.export();
 			xml.addChild(translateXml);
+		}
+
+		//children nodes
+		for (i in 0...nodes.length)
+		{
+			xml.addChild(nodes[i].export());
 		}
 
 		return xml;
