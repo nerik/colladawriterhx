@@ -28,6 +28,8 @@ class Collada
 	public function export() 
 	{
 		var xml = Xml.createElement('COLLADA');
+		xml.set("xmlns","http://www.collada.org/2005/11/COLLADASchema");
+		xml.set("version","1.4.1");
 
 		//asset
 		xml.addChild( asset.export() );
@@ -59,19 +61,29 @@ class Collada
 	}
 
 
+	#if (neko || cpp)
+	static public function prettifyXml(filename)
+	{
+		if ( ! ~/Win/.match( Sys.systemName() ) )
+        {
+            //run xmllint to prettify xml output
+            Sys.command("xmllint --format "+ filename + " > " + filename+"_tmp");
+            Sys.command("mv " + filename+"_tmp " + filename);
+        }
+	}
+	#end
+
 
 
 }
 
 
-//helper structs
-typedef Point3D = {
+typedef Vector3 =
+{
 	x:Float,
 	y:Float,
 	z:Float
 }
-
-
 
 
 

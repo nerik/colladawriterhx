@@ -33,8 +33,7 @@ class DataArray<T>
 
         var type = Type.typeof(_values[0] );
 
-
-        if (type == ValueType.TFloat)
+        if (type == ValueType.TFloat || type == ValueType.TInt)
         {
             typeName = "float";
         }
@@ -64,7 +63,7 @@ class DataArray<T>
 
 
 
-    static public function buildFrom3DPoints(pts:Array<Collada.Point3D>):DataArray<Float>
+    static public function buildFrom3DPoints(pts:Array<Collada.Vector3>):DataArray<Float>
     {
 
         var arr = [];

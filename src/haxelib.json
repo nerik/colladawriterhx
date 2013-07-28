@@ -1,0 +1,10 @@
+{
+    "name":         "colladawriterhx",
+    "url":          "https://github.com/nerik/colladawriterhx",
+    "license":      "BSD",
+    "tags":         [],
+    "description":  "Colladawriterhx is a Collada file writer. ATM Collada features support is very partial and the lib is not stable at all.",
+    "version":      "0.1.1",
+    "releasenote":  "unstable",
+    "contributors": ["nerik"]
+}
