@@ -18,9 +18,6 @@ Planned support for :
 
 BSD 3-Clause License
 
-Poly2Tri Copyright (c) 2009-2010, Poly2Tri Contributors
-http://code.google.com/p/poly2tri/
-
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
